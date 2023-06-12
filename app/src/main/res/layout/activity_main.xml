@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/etUAS"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Ujian Akhir Semester"
+        android:layout_marginTop="150dp"
+        android:layout_centerHorizontal="true"
+        android:textSize="32sp"
+        android:textStyle="bold"
+        android:textColor="@color/purple_500"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <EditText
+        android:id="@+id/etNIM"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/etUAS"
+        android:hint="NIM"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginEnd="20dp"
+        android:layout_marginBottom="20dp"
+        app:boxBackgroundColor="@color/white"
+        app:boxBackgroundMode="outline"
+        android:padding="15dp"
+        android:textColor="@color/black"
+        android:textColorHint="@color/black"/>
+
+
+    <EditText
+        android:id="@+id/etNAMA"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/etNIM"
+        android:hint="NAMA"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginEnd="20dp"
+        android:layout_marginBottom="20dp"
+        app:boxBackgroundColor="@color/white"
+        app:boxBackgroundMode="outline"
+        android:padding="15dp"
+        android:textColor="@color/black"
+        android:textColorHint="@color/black"/>
+
+    <Button
+        android:id="@+id/etOKE"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="OKE"
+        android:layout_marginTop="10dp"
+        android:textColor="#01558C"
+        android:backgroundTint="@color/white"
+        android:layout_below="@id/etNAMA"
+        android:textStyle="bold"/>
+
+</RelativeLayout>
